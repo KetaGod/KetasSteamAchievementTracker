@@ -1,19 +1,28 @@
 # KSAT — Keta’s Steam Achievement Tracker
 
 KSAT helps you **track, tag, and compare** Steam achievements with a clean, cozy UI.  
-This guide is for users who downloaded the **pre-built Windows app (.exe)**.
+This README is for users who downloaded the **pre-built Windows app (.exe)** from the **Releases** page.
+
+---
+
+## ⬇️ Get KSAT
+
+- Download the latest version from **GitHub → Releases** (recommended):
+  - **Installer**: `KSAT_*_x64-setup.exe` — adds Start-menu entry and proper uninstaller.
+  - **Portable**: `ksat.exe` — no install; just run.
+- We include a **SHA256** checksum in the release to verify your download.
 
 ---
 
 ## 🌟 What KSAT does
 
-- **Pulls your Steam library** (with optional “installed only”)
-- **Shows achievements per game** with rarity, secret markers, and filters
-- **Lets you check off achievements manually** (for custom tracking or offline play)
+- **Fetch your Steam library** (with an **Installed** toggle)
+- **Show achievements per game** with rarity, secret markers, description, and filtering
+- **Manual checkboxes** so you can track custom goals (offline play, console ports, mod runs, etc.)
 - **Notes & tags per game** to plan backlog, DLC cleanup, or speedruns
-- **Friend compare**: paste a SteamID64 or profile URL and see what each person is missing
-- **Share card**: export a simple progress image to share with friends
-- **Import/Export**: back up your KSAT data locally
+- **Friend compare** — paste a SteamID64, vanity, or profile URL and see who’s missing what
+- **Share card** — export a simple progress PNG for social/Discord
+- **Import/Export** — back up your KSAT data locally
 
 > KSAT talks directly to the **Steam Web API** and stores your notes/tags **on your PC**.
 
@@ -34,67 +43,78 @@ This guide is for users who downloaded the **pre-built Windows app (.exe)**.
 
 ## 🚀 Getting Started (Windows)
 
-1. **Run** `KSAT.exe` (or install with the provided setup if you received one).
-2. Click **Settings** (top-right) → **Get a key** to open Steam’s API key page.
-3. **Sign in to Steam** in your browser, create or copy your **Web API Key**, and paste it in KSAT’s field. Click **Save**.
+1. **Run** the installer or the portable `ksat.exe` you downloaded from Releases.
+2. Open **Settings** (top-right) → click **Get a key** to open Steam’s API key page.
+3. **Sign in to Steam** in your browser, create or copy your **Web API Key**, and paste it into KSAT. Click **Save**.
 4. Back on the left, click **Sign in with Steam**.  
-   After you complete sign-in, KSAT will show your **SteamID64** and start fetching your library.
+   After you complete sign-in, KSAT shows your **SteamID64** and starts fetching your library.
 
-> Tip: For KSAT to see your owned games, Steam profile privacy needs **Game details = Public** (you can change it back anytime).
+> To let KSAT see your owned games, set your Steam **Privacy → Game details** to **Public** (you can change it back later).
 
 ---
 
 ## 🎮 Using KSAT
 
-- **Browse your games** in the left sidebar. Search or toggle **Installed** to narrow down.
-- **Select a game** to see its achievements. Use filters: **Unlocked**, **Locked**, **Secret**, **Manual only**.
-- **Manual checkboxes** let you track progress your own way (speedruns, console play, retro ports, etc.).
-- **Notes & Tags**: write notes and add comma‑separated tags (e.g., `speedrun, DLC1, cleanup`) then **Save**.
-- **Friend compare**: paste a **SteamID64**, a vanity name, or a full **Steam profile URL** and hit **Compare**.
-- **Share card**: click **Share Card** to export a simple PNG with your current progress.
-- **Import/Export**: back up or move your KSAT data between PCs.
+- **Browse & search** your games in the left sidebar. Toggle **Installed** to narrow the list.
+- **Pick a game** to see its achievements. Use filters: **Unlocked**, **Locked**, **Secret**, **Manual only**, plus text search.
+- **Check achievements manually** when you want to track goals outside the API.
+- **Notes & Tags**: write notes and add comma‑separated tags (e.g., `speedrun, DLC1, cleanup`), then **Save**.
+- **Friend compare**: paste a **SteamID64**, a vanity name, or a full profile URL, then press **Compare**.  
+  You’ll see “They have and you don’t” vs “You have and they don’t.”
+- **Share card**: click **Share Card** to export a simple PNG of your current progress.
+- **Import/Export**: use the top‑right buttons to back up or move your KSAT data between machines.
 
 ---
 
 ## 💡 Tips
 
-- If a game shows **no achievements**, that title might not expose data through the public API.
-- Hover tooltips in the UI often explain features (e.g., rarity, secret badges).
-- **Big‑screen mode** in **Settings** enlarges UI elements for TV/couch setups.
+- Some titles don’t expose achievements via the public API; those will show **No achievements found**.
+- Hover **tooltips** in the UI explain things like rarity and secret badges.
+- Try **Big‑screen mode** in **Settings** to enlarge UI elements for couch/TV use.
+- Switch **Theme** in **Settings** any time for a different look.
 
 ---
 
 ## ❓ FAQ
 
 **Do I need a Steam Web API key?**  
-Yes—KSAT uses it to fetch your library and achievement data. You only need to set it **once**.
+Yes. KSAT uses it to fetch your library and achievement data. You only need to set it **once**.
 
-**Where does KSAT store my data?**  
-On your PC (notes, tags, and manual checks). No accounts or servers.
+**Where is my KSAT data stored?**  
+Locally on your PC (notes, tags, manual checks). No servers, no accounts.
 
 **Can I use KSAT offline?**  
 You can view your last fetched data and edit notes/tags/checks. Online access is required to refresh library/achievements.
 
 **Does KSAT modify my Steam account or unlock achievements?**  
-No. KSAT is read‑only and for **tracking** only.
+No. KSAT is read‑only. It’s for **tracking** and planning.
 
 ---
 
 ## 🔐 Privacy
 
-- KSAT stores notes/tags locally and only calls the **Steam Web API** to read your public data.
-- No telemetry, no third‑party analytics.
+- Your notes/tags and configuration are stored locally.
+- The app calls the **Steam Web API** to read publicly available data only.
+- No telemetry and no third‑party analytics.
 
 ---
 
 ## 🧭 Troubleshooting
 
-- **Owned games list is empty** → In Steam privacy settings, set **Game details** to **Public**, verify your **API key**, then **Refresh**.
-- **Sign-in opens a blank window** → Complete the sign-in in your **default browser**, then return to KSAT. Make sure Microsoft **WebView2 Runtime** is installed.
-- **A friend doesn’t show** → Ask them for a **SteamID64** or public profile URL and try again.
-- **Icons/UI look off** → Try a different theme in **Settings**, or enable **Big‑screen mode**.
+- **Owned games list is empty** → In Steam **Privacy**, set **Game details** to **Public**, verify your **API key**, then click **Refresh**.
+- **Sign‑in opens blank or doesn’t return** → Complete the sign‑in in your **default browser**, then return to KSAT. Ensure the Microsoft **WebView2 Runtime** is installed.
+- **Friend compare doesn’t work** → Ask for their **SteamID64** or copy their full profile URL.
+- **UI scale / readability** → Try a different **Theme** or enable **Big‑screen mode** in **Settings**.
 
-If you get stuck, share a screenshot and describe what you clicked right before the issue.
+If you get stuck, open an issue with a short description and a screenshot of what you clicked right before the problem.
+
+---
+
+## 📦 Distributing KSAT
+
+- We publish builds on the **Releases** page. Link users there instead of the repository ZIP.
+- Prefer the **installer** for end‑users; the **portable exe** is great for power users and quick tests.
+- Each release may include **SHA256** checksums for verification.
 
 ---
 
@@ -102,7 +122,6 @@ If you get stuck, share a screenshot and describe what you clicked right before 
 
 - Built with [Tauri](https://tauri.app/), [React](https://react.dev/), and [Vite](https://vitejs.dev/)
 - Uses the public [Steam Web API](https://developer.valvesoftware.com/wiki/Steam_Web_API)
-- Icon theme: **Foresty + Cozy** 🌲
 
 ---
 
