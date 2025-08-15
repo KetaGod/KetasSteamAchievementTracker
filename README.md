@@ -130,4 +130,4 @@ If you get stuck, open an issue with a short description and a screenshot of wha
 ```
 MIT © 2025 Ketamine Junkies Inc.
 ```
-![Downloads](https://img.shields.io/github/downloads/KetaGod/KetasSteamAchievementTracker/total?label=downloads&logo=github)
+![Downloads](https://img.shields.io/github/downloads/KetaGod/KetasSteamAchievementTracker/total?label=downloads&logo=github) | ![GitHub Repo stars](https://img.shields.io/github/stars/KetaGod/KetasSteamAchievementTracker?style=social)
