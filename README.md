@@ -1,7 +1,6 @@
 # KSAT — Keta’s Steam Achievement Tracker
 
-KSAT helps you **track, tag, and compare** Steam achievements with a clean, cozy UI.  
-This README is for users who downloaded the **pre-built Windows app (.exe)** from the **Releases** page.
+KSAT helps you **track, tag, and compare** Steam achievements.
 
 ---
 
